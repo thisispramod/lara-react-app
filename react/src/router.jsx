@@ -1,5 +1,7 @@
 import {createBrowserRouter} from "react-router-dom";
 import Signup from "./views/Signup";
+import Login from "./views/Login";
+import Notfound from "./views/Notfound";
 import Users from "./views/Users";
 
 const router = createBrowserRouter([
@@ -19,4 +21,6 @@ const router = createBrowserRouter([
     path:'/',
     element:<Notfound />
 }
-])
+]);
+
+export default router;
