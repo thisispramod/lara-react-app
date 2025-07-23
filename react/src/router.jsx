@@ -1,26 +1,26 @@
-import {createBrowserRouter} from "react-router-dom";
-import Signup from "./views/Signup";
-import Login from "./views/Login";
-import Notfound from "./views/Notfound";
-import Users from "./views/Users";
+import { createBrowserRouter } from 'react-router-dom'
+import Signup from './views/Signup'
+import Users from './views/Users'
+import Login from './views/Login'
+import Notfound from './views/Notfound'
 
 const router = createBrowserRouter([
-{
-    path:'/login',
-    element:<Login />
-},
-{
+  {
+    path: '/login',
+    element: <Login />
+  },
+  {
+    path: '/signup',
+    element: <Signup />
+  },
+  {
+    path: '/users',
+    element: <Users />
+  },
+  {
+    path: '*',
+    element: <Notfound />
+  }
+])
 
-    path:'/signup',
-    element:<Signup />
-},
-{
-    path:'/users',
-    element:<Users />
-},{
-    path:'/',
-    element:<Notfound />
-}
-]);
-
-export default router;
+export default router
